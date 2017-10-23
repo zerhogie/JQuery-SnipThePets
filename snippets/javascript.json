@@ -1,0 +1,1081 @@
+{
+    "func": {
+        "prefix": "func",
+        "body": [
+            "function (${param}) {  }"
+        ],
+        "description": "An anonymous function."
+    },
+    "$After": {
+        "prefix": "$After",
+        "body": [
+            "$(${selector}).after(${content});"
+        ],
+        "description": "Insert content, specified by the parameter, after each element in the set of matched elements."
+    },
+    "$Ajax": {
+        "prefix": "$Ajax",
+        "body": [
+            "$.ajax({",
+            "\ttype: \"${method}\",",
+            "\turl: \"${url}\",",
+            "\tdata: \"${data}\",",
+            "\tdataType: \"${dataType}\",",
+            "\tsuccess: function (response) {",
+            "\t\t$0",
+            "\t}",
+            "});"
+        ],
+        "description": "Perform an asynchronous HTTP (Ajax) request."
+    },
+    "$AjaxAspNetWebService": {
+        "prefix": "$AjaxAspNetWebService",
+        "body": [
+            "$.ajax({",
+            "\ttype: \"POST\",",
+            "\tcontentType: \"application/json; charset=utf-8\",",
+            "\tdataType: \"${dataType}\",",
+            "\turl: \"${url}\",",
+            "\tdata: \"${data}\",",
+            "\tsuccess: function (response) {",
+            "\t\t$0",
+            "\t}",
+            "});"
+        ],
+        "description": "Perform an asynchronous HTTP (Ajax) request to a ASP.NET web service."
+    },
+    "$Anim": {
+        "prefix": "$Anim",
+        "body": [
+            "$(${selector}).animate({${contentJSon}}, ${time});"
+        ]
+    },
+    "$Append": {
+        "prefix": "$Append",
+        "body": [
+            "$(${selector}).append(${content});"
+        ],
+        "description": "Insert content, specified by the parameter, to the end of each element in the set of matched elements."
+    },
+    "$AppendTo": {
+        "prefix": "$AppendTo",
+        "body": [
+            "$(${content}).appendTo(${selector});"
+        ],
+        "description": "Insert every element in the set of matched elements to the end of the target."
+    },
+    "$AttrGet": {
+        "prefix": "$AttrGet",
+        "body": [
+            "$(${selector}).attr(${attributeName});"
+        ],
+        "description": "Get the value of an attribute for the first element in the set of matched elements."
+    },
+    "$AttrRemove": {
+        "prefix": "$AttrRemove",
+        "body": [
+            "$(${selector}).removeAttr(${attributeName});"
+        ],
+        "description": "Remove an attribute from each element in the set of matched elements."
+    },
+    "$AttrSet": {
+        "prefix": "$AttrSet",
+        "body": [
+            "$(${selector}).attr(${attributeName}, ${value});"
+        ],
+        "description": "Set one or more attributes for the set of matched elements."
+    },
+    "$AttrSetFn": {
+        "prefix": "$AttrSetFn",
+        "body": [
+            "$(${selector}).attr(${attributeName}, function (index, attr) { ",
+            "\t$0 ",
+            "});"
+        ],
+        "description": "Set one or more attributes for the set of matched elements."
+    },
+    "$AttrSetObj": {
+        "prefix": "$AttrSetObj",
+        "body": [
+            "$(${selector}).attr({",
+            "\t${name}: ${value}",
+            "\t$0",
+            "});"
+        ],
+        "description": "Set one or more attributes for the set of matched elements."
+    },
+    "$Before": {
+        "prefix": "$Before",
+        "body": [
+            "$(${selector}).before(${content});"
+        ],
+        "description": "Insert content, specified by the parameter, before each element in the set of matched elements."
+    },
+    "$Bind": {
+        "prefix": "$Bind",
+        "body": [
+            "$(${selector}).bind(${eventType}, function (e) {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Attach a handler to an event for the elements."
+    },
+    "$BindWithData": {
+        "prefix": "$BindWithData",
+        "body": [
+            "$(${selector}).bind(${eventType}, ${eventData}, function (e) {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Attach a handler to an event for the elements."
+    },
+    "$Blur": {
+        "prefix": "$Blur",
+        "body": [
+            "$(${selector}).blur(function (e) { ",
+            "\te.preventDefault();",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"blur\" JavaScript event, or trigger that event on an element."
+    },
+    "$Change": {
+        "prefix": "$Change",
+        "body": [
+            "$(${selector}).change(function (e) { ",
+            "\te.preventDefault();",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"change\" JavaScript event, or trigger that event on an element."
+    },
+    "$ClassAdd": {
+        "prefix": "$ClassAdd",
+        "body": [
+            "$(${selector}).addClass(${className});"
+        ],
+        "description": "Adds the specified class(es) to each of the set of matched elements."
+    },
+    "$ClassRemove": {
+        "prefix": "$ClassRemove",
+        "body": [
+            "$(${selector}).removeClass(${className});"
+        ],
+        "description": "Remove a single class, multiple classes, or all classes from each element in the set of matched elements."
+    },
+    "$ClassToggle": {
+        "prefix": "$ClassToggle",
+        "body": [
+            "$(${selector}).toggleClass(${className});"
+        ],
+        "description": "Add or remove one or more classes from each element in the set of matched elements, depending on either the class\u0027s presence."
+    },
+    "$ClassToggleSwitch": {
+        "prefix": "$ClassToggleSwitch",
+        "body": [
+            "$(${selector}).toggleClass(${className}, ${switch});"
+        ],
+        "description": "Add or remove one or more classes from each element in the set of matched elements, depending on either the class\u0027s presence or the value of the switch argument."
+    },
+    "$Click": {
+        "prefix": "$Click",
+        "body": [
+            "$(${selector}).click(function (e) { ",
+            "\te.preventDefault();",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"click\" JavaScript event, or trigger that event on an element."
+    },
+    "$Clone": {
+        "prefix": "$Clone",
+        "body": [
+            "$(${selector}).clone();"
+        ],
+        "description": "Create a deep copy of the set of matched elements."
+    },
+    "$CloneWithEvents": {
+        "prefix": "$CloneWithEvents",
+        "body": [
+            "$(${selector}).clone(true);"
+        ],
+        "description": "Create a deep copy of the set of matched elements."
+    },
+    "$CssGet": {
+        "prefix": "$CssGet",
+        "body": [
+            "$(${selector}).css(${propertyName});"
+        ],
+        "description": "Get the computed style properties for the first element in the set of matched elements."
+    },
+    "$CssSet": {
+        "prefix": "$CssSet",
+        "body": [
+            "$(${selector}).css(${propertyName}, ${value});"
+        ],
+        "description": "Set one or more CSS properties for the set of matched elements."
+    },
+    "$CssSetObj": {
+        "prefix": "$CssSetObj",
+        "body": [
+            "$(${selector}).css({",
+            "\t${propertyName}: ${value}",
+            "\t$0",
+            "});"
+        ],
+        "description": "Set one or more CSS properties for the set of matched elements."
+    },
+    "$DataGet": {
+        "prefix": "$DataGet",
+        "body": [
+            "$(${selector}).data(${key});"
+        ],
+        "description": "Return the value at the named data store for the first element in the $uery collection, as set by data(name, value) or by an HTML5 data-* attribute."
+    },
+    "$DataRemove": {
+        "prefix": "$DataRemove",
+        "body": [
+            "$(${selector}).removeData(${element});"
+        ],
+        "description": "Remove a previously-stored piece of data."
+    },
+    "$DataSet": {
+        "prefix": "$DataSet",
+        "body": [
+            "$(${selector}).data(${key}, ${value});"
+        ],
+        "description": "Store arbitrary data associated with the matched elements."
+    },
+    "$DataSetObj": {
+        "prefix": "$DataSetObj",
+        "body": [
+            "$(${selector}).data({",
+            "\t${key}: ${value}",
+            "\t$0",
+            "});"
+        ],
+        "description": "Store arbitrary data associated with the matched elements."
+    },
+    "$Die": {
+        "prefix": "$Die",
+        "body": [
+            "$(${selector}).die(${eventType});"
+        ],
+        "description": "Remove event handlers previously attached using .live() from the elements."
+    },
+    "$DieAll": {
+        "prefix": "$DieAll",
+        "body": [
+            "$(${selector}).die();"
+        ],
+        "description": "Remove event handlers previously attached using .live() from the elements."
+    },
+    "$DieFn": {
+        "prefix": "$DieFn",
+        "body": [
+            "$(${selector}).die(${eventType}, ${handler});"
+        ],
+        "description": "Remove event handlers previously attached using .live() from the elements."
+    },
+    "$DocReady": {
+        "prefix": "$DocReady",
+        "body": [
+            "$(document).ready(function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Function to execute when the DOM is fully loaded."
+    },
+    "$DocReadyShort": {
+        "prefix": "$DocReadyShort",
+        "body": [
+            "$(function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Function to execute when the DOM is fully loaded."
+    },
+    "$Each": {
+        "prefix": "$Each",
+        "body": [
+            "$.each(${collection}, function (indexInArray, valueOfElement) { ",
+            "\t$0 ",
+            "});"
+        ],
+        "description": "A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function\u0027s arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties."
+    },
+    "$EachElement": {
+        "prefix": "$EachElement",
+        "body": [
+            "$(${selector}).each(function (index, element) {",
+            "\t// element == this",
+            "\t$0",
+            "});"
+        ],
+        "description": "Iterate over a $uery object, executing a function for each matched element. "
+    },
+    "$Empty": {
+        "prefix": "$Empty",
+        "body": [
+            "$(${selector}).empty();"
+        ],
+        "description": "Remove all child nodes of the set of matched elements from the DOM."
+    },
+    "$FadeIn": {
+        "prefix": "$FadeIn",
+        "body": [
+            "$(${selector}).fadeIn();"
+        ],
+        "description": "Display the matched elements by fading them to opaque."
+    },
+    "$FadeInFull": {
+        "prefix": "$FadeInFull",
+        "body": [
+            "$(${selector}).fadeIn(${duration}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Display the matched elements by fading them to opaque."
+    },
+    "$FadeOut": {
+        "prefix": "$FadeOut",
+        "body": [
+            "$(${selector}).fadeOut();"
+        ],
+        "description": "Hide the matched elements by fading them to transparent."
+    },
+    "$FadeOutFull": {
+        "prefix": "$FadeOutFull",
+        "body": [
+            "$(${selector}).fadeOut(${duration}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Hide the matched elements by fading them to transparent."
+    },
+    "$FadeTo": {
+        "prefix": "$FadeTo",
+        "body": [
+            "$(${selector}).fadeTo(${duration}, ${opacity});"
+        ],
+        "description": "Adjust the opacity of the matched elements."
+    },
+    "$FadeToFull": {
+        "prefix": "$FadeToFull",
+        "body": [
+            "$(${selector}).fadeTo(${duration}, ${opacity}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Adjust the opacity of the matched elements."
+    },
+    "$Find": {
+        "prefix": "$Find",
+        "body": [
+            "$(${selector}).find(${selector2});"
+        ],
+        "description": "Get the descendants of each element in the current set of matched elements, filtered by a selector, $uery object, or element."
+    },
+    "$Focus": {
+        "prefix": "$Focus",
+        "body": [
+            "$(${selector}).focus(function (e) { ",
+            "\te.preventDefault();",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"focus\" JavaScript event, or trigger that event on an element."
+    },
+    "$Get": {
+        "prefix": "$Get",
+        "body": [
+            "$.get(\"${url}\", ${data},",
+            "\tfunction (data, textStatus, $XHR) {",
+            "\t\t$0",
+            "\t},",
+            "\t\"${dataType}\"",
+            ");"
+        ],
+        "description": "Load data from the server using a HTTP GET request."
+    },
+    "$GetJson": {
+        "prefix": "$GetJson",
+        "body": [
+            "$.getJSON(\"${url}\", ${data},",
+            "\tfunction (data, textStatus, $XHR) {",
+            "\t\t$0",
+            "\t}",
+            ");"
+        ],
+        "description": "Load JSON-encoded data from the server using a GET HTTP request."
+    },
+    "$GetScript": {
+        "prefix": "$GetScript",
+        "body": [
+            "$.getScript(\"${url}\", function (script, textStatus, $XHR) {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Load a JavaScript file from the server using a GET HTTP request, then execute it."
+    },
+    "$HasClass": {
+        "prefix": "$HasClass",
+        "body": [
+            "$(${selector}).hasClass(${className});"
+        ],
+        "description": "Determine whether any of the matched elements are assigned the given class."
+    },
+    "$HeightGet": {
+        "prefix": "$HeightGet",
+        "body": [
+            "$(${selector}).height();"
+        ],
+        "description": "Get the current computed height for the first element in the set of matched elements."
+    },
+    "$HeightSet": {
+        "prefix": "$HeightSet",
+        "body": [
+            "$(${selector}).height(${value});"
+        ],
+        "description": "Set the CSS height of every matched element."
+    },
+    "$Hide": {
+        "prefix": "$Hide",
+        "body": [
+            "$(${selector}).hide();"
+        ],
+        "description": "Hide the matched elements."
+    },
+    "$HideFull": {
+        "prefix": "$HideFull",
+        "body": [
+            "$(${selector}).hide(${duration}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Hide the matched elements."
+    },
+    "$Hover": {
+        "prefix": "$Hover",
+        "body": [
+            "$(${selector}).hover(function () {",
+            "\t\t// over",
+            "\t\t$0",
+            "\t}, function () {",
+            "\t\t// out",
+            "\t}",
+            ");"
+        ],
+        "description": "Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements."
+    },
+    "$HtmlGet": {
+        "prefix": "$HtmlGet",
+        "body": [
+            "$(${selector}).html();"
+        ],
+        "description": "Get the HTML contents of the first element in the set of matched elements."
+    },
+    "$HtmlSet": {
+        "prefix": "$HtmlSet",
+        "body": [
+            "$(${selector}).html(${htmlString});"
+        ],
+        "description": "Set the HTML contents of each element in the set of matched elements."
+    },
+    "$InnerHeight": {
+        "prefix": "$InnerHeight",
+        "body": [
+            "$(${selector}).innerHeight();"
+        ],
+        "description": "Get the current computed height for the first element in the set of matched elements, including padding but not border."
+    },
+    "$InnerWidth": {
+        "prefix": "$InnerWidth",
+        "body": [
+            "$(${selector}).innerWidth();"
+        ],
+        "description": "Get the current computed inner width for the first element in the set of matched elements, including padding but not border."
+    },
+    "$InsertAfter": {
+        "prefix": "$InsertAfter",
+        "body": [
+            "$(${target}).insertAfter(${selector});"
+        ],
+        "description": "Insert every element in the set of matched elements after the target."
+    },
+    "$InsertBefore": {
+        "prefix": "$InsertBefore",
+        "body": [
+            "$(${target}).insertBefore(${selector});"
+        ],
+        "description": "Insert every element in the set of matched elements before the target."
+    },
+    "$KeyDown": {
+        "prefix": "$KeyDown",
+        "body": [
+            "$(${selector}).keydown(function (e) { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"keydown\" JavaScript event, or trigger that event on an element."
+    },
+    "$KeyPress": {
+        "prefix": "$KeyPress",
+        "body": [
+            "$(${selector}).keypress(function (e) { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"keypress\" JavaScript event, or trigger that event on an element."
+    },
+    "$KeyUp": {
+        "prefix": "$KeyUp",
+        "body": [
+            "$(${selector}).keyup(function (e) { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"keyup\" JavaScript event, or trigger that event on an element."
+    },
+    "$LoadGet": {
+        "prefix": "$LoadGet",
+        "body": [
+            "$(${selector}).load(\"${url}\", \"${data}\", function (response, status, request) {",
+            "\tthis; // dom element",
+            "\t$0",
+            "});"
+        ],
+        "description": "Load data from the server and place the returned HTML into the matched element."
+    },
+    "$LoadPost": {
+        "prefix": "$LoadPost",
+        "body": [
+            "$(${selector}).load(\"${url}\", \"${data}\", function (response, status, request) {",
+            "\tthis; // dom element",
+            "\t$0",
+            "});"
+        ],
+        "description": "Load data from the server and place the returned HTML into the matched element."
+    },
+    "$Map": {
+        "prefix": "$Map",
+        "body": [
+            "$.map(${arrayOrObject}, function (elementOrValue, indexOrKey) {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Translate all items in an array or object to new array of items."
+    },
+    "$MouseDown": {
+        "prefix": "$MouseDown",
+        "body": [
+            "$(${selector}).mousedown(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"mousedown\" JavaScript event, or trigger that event on an element."
+    },
+    "$MouseEnter": {
+        "prefix": "$MouseEnter",
+        "body": [
+            "$(${selector}).mouseenter(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element."
+    },
+    "$MouseLeave": {
+        "prefix": "$MouseLeave",
+        "body": [
+            "$(${selector}).mouseleave(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element."
+    },
+    "$MouseMove": {
+        "prefix": "$MouseMove",
+        "body": [
+            "$(${selector}).mousemove(function (e) { ",
+            "\t// values: e.clientX, e.clientY, e.pageX, e.pageY",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"mousemove\" JavaScript event, or trigger that event on an element."
+    },
+    "$MouseOut": {
+        "prefix": "$MouseOut",
+        "body": [
+            "$(${selector}).mouseout(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"mouseout\" JavaScript event, or trigger that event on an element."
+    },
+    "$MouseOver": {
+        "prefix": "$MouseOver",
+        "body": [
+            "$(${selector}).mouseover(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"mouseover\" JavaScript event, or trigger that event on an element."
+    },
+    "$MouseUp": {
+        "prefix": "$MouseUp",
+        "body": [
+            "$(${selector}).mouseup(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"mouseup\" JavaScript event, or trigger that event on an element."
+    },
+    "$Namespace": {
+        "prefix": "$Namespace",
+        "body": [
+            "(function ( ${name}, $, undefined ) {",
+            "\t// Private Property",
+            "\tmyPrivateProperty = \"Private Property\";",
+            "\t\t",
+            "\t// Public Property",
+            "\t${name}.myPublicProperty = \"Publically Accessible Property\";",
+            "\t\t",
+            "\t// Private Method",
+            "\tfunction myPrivateMethod () {",
+            "\t\t",
+            "\t}",
+            "\t\t",
+            "\t// Public Method",
+            "\t${name}.myPublicMethod = function () {",
+            "\t\t",
+            "\t};  ",
+            "}(window.${name} = window.${name} || {}, $uery ));"
+        ],
+        "description": "A namespace template. ref: http://enterprise$uery.com/2010/10/how-good-c-habits-can-encourage-bad-javascript-habits-part-1/"
+    },
+    "$OffsetGet": {
+        "prefix": "$OffsetGet",
+        "body": [
+            "var offset = $(${selector}).offset();",
+            "var top = offset.top;",
+            "var left = offset.left;",
+            "$0"
+        ],
+        "description": "Get the current coordinates of the first element, or set the coordinates of every element, in the set of matched elements, relative to the document."
+    },
+    "$OffsetParent": {
+        "prefix": "$OffsetParent",
+        "body": [
+            "var offset = $(${selector}).offsetParent();",
+            "var top = offset.top;",
+            "var left = offset.left;",
+            "$0"
+        ],
+        "description": "Get the closest ancestor element that is positioned."
+    },
+    "$On": {
+        "prefix": "$On",
+        "body": [
+            "$(${selector}).on(${events}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Attach an event handler function for one or more events to the selected elements."
+    },
+    "$One": {
+        "prefix": "$One",
+        "body": [
+            "$(${selector}).one(${events}, function (e) {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Attach a handler to an event for the elements. The handler is executed at most once per element per event type."
+    },
+    "$OneWithData": {
+        "prefix": "$OneWithData",
+        "body": [
+            "$(${selector}).one(${events}, ${data}, function (e) {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Attach a handler to an event for the elements. The handler is executed at most once per element per event type."
+    },
+    "$OuterHeight": {
+        "prefix": "$OuterHeight",
+        "body": [
+            "$(${selector}).outerHeight(${includeMargin});"
+        ],
+        "description": "Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns a number (without \"px\") representation of the value or null if called on an empty set of elements."
+    },
+    "$OuterWidth": {
+        "prefix": "$OuterWidth",
+        "body": [
+            "$(${selector}).outerWidth(${includeMargin});"
+        ],
+        "description": "Get the current computed width for the first element in the set of matched elements, including padding and border."
+    },
+    "$Plugin": {
+        "prefix": "$Plugin",
+        "body": [
+            "(function ($) {",
+            "\t$uery.fn.${pluginName} = function (settings) {",
+            "\t\tvar config = {\u0027foo\u0027: \u0027bar\u0027};",
+            " ",
+            "\t\tif (settings) $uery.extend(config, settings);",
+            " ",
+            "\t\tthis.each(function () {",
+            "\t\t\t// element-specific code here",
+            "\t\t\t$0",
+            "\t\t});",
+            " ",
+            "\t\treturn this;",
+            "\t};",
+            "})($uery);"
+        ],
+        "description": "Plugin template."
+    },
+    "$Position": {
+        "prefix": "$Position",
+        "body": [
+            "var position = $(${selector}).position();",
+            "var top = position.top;",
+            "var left = position.left;",
+            "$0"
+        ],
+        "description": "Get the current coordinates of the first element in the set of matched elements, relative to the offset parent."
+    },
+    "$Post": {
+        "prefix": "$Post",
+        "body": [
+            "$.post(\"${url}\", ${data},",
+            "\tfunction (data, textStatus, $XHR) {",
+            "\t\t$0",
+            "\t},",
+            "\t\"${dataType}\"",
+            ");"
+        ],
+        "description": "Load data from the server using a HTTP POST request."
+    },
+    "$Prepend": {
+        "prefix": "$Prepend",
+        "body": [
+            "$(${selector}).prepend(${content});"
+        ],
+        "description": "Insert content, specified by the parameter, to the beginning of each element in the set of matched elements."
+    },
+    "$PrependTo": {
+        "prefix": "$PrependTo",
+        "body": [
+            "$(${content}).prependTo(${selector});"
+        ],
+        "description": "Insert every element in the set of matched elements to the beginning of the target."
+    },
+    "$Remove": {
+        "prefix": "$Remove",
+        "body": [
+            "$(${selector}).remove();"
+        ],
+        "description": "Remove the set of matched elements from the DOM."
+    },
+    "$RemoveExp": {
+        "prefix": "$RemoveExp",
+        "body": [
+            "$(${selector}).remove(${expression});"
+        ],
+        "description": "Remove the set of matched elements from the DOM."
+    },
+    "$ReplaceAll": {
+        "prefix": "$ReplaceAll",
+        "body": [
+            "$(${selector}).replaceAll(${target});"
+        ],
+        "description": "Replace each target element with the set of matched elements."
+    },
+    "$ReplaceWith": {
+        "prefix": "$ReplaceWith",
+        "body": [
+            "$(${selector}).replaceWith(${newContent});"
+        ],
+        "description": "Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed."
+    },
+    "$Resize": {
+        "prefix": "$Resize",
+        "body": [
+            "$(${selector}).resize(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"resize\" JavaScript event, or trigger that event on an element."
+    },
+    "$Scroll": {
+        "prefix": "$Scroll",
+        "body": [
+            "$(${selector}).scroll(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"scroll\" JavaScript event, or trigger that event on an element."
+    },
+    "$ScrollLeftGet": {
+        "prefix": "$ScrollLeftGet",
+        "body": [
+            "$(${selector}).scrollLeft();"
+        ],
+        "description": "Get the current horizontal position of the scroll bar for the first element in the set of matched elements."
+    },
+    "$ScrollLeftSet": {
+        "prefix": "$ScrollLeftSet",
+        "body": [
+            "$(${selector}).scrollLeft(${value});"
+        ],
+        "description": "Set the current horizontal position of the scroll bar for each of the set of matched elements."
+    },
+    "$ScrollTopGet": {
+        "prefix": "$ScrollTopGet",
+        "body": [
+            "$(${selector}).scrollTop();"
+        ],
+        "description": "Get the current vertical position of the scroll bar for the first element in the set of matched elements or set the vertical position of the scroll bar for every matched element."
+    },
+    "$ScrollTopSet": {
+        "prefix": "$ScrollTopSet",
+        "body": [
+            "$(${selector}).scrollTop(${value});"
+        ],
+        "description": "Set the current vertical position of the scroll bar for each of the set of matched elements."
+    },
+    "$Select": {
+        "prefix": "$Select",
+        "body": [
+            "$(${selector}).select(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"select\" JavaScript event, or trigger that event on an element."
+    },
+    "$SelectTrigger": {
+        "prefix": "$SelectTrigger",
+        "body": [
+            "$(${selector}).select();"
+        ],
+        "description": "Bind an event handler to the \"select\" JavaScript event, or trigger that event on an element."
+    },
+    "$Show": {
+        "prefix": "$Show",
+        "body": [
+            "$(${selector}).show();"
+        ],
+        "description": "Display the matched elements."
+    },
+    "$ShowFull": {
+        "prefix": "$ShowFull",
+        "body": [
+            "$(${selector}).show(${duration}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Display the matched elements."
+    },
+    "$SlideDown": {
+        "prefix": "$SlideDown",
+        "body": [
+            "$(${selector}).slideDown();"
+        ],
+        "description": "Display the matched elements with a sliding motion."
+    },
+    "$SlideDownFull": {
+        "prefix": "$SlideDownFull",
+        "body": [
+            "$(${selector}).slideDown(${duration}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Display the matched elements with a sliding motion."
+    },
+    "$SlideToggle": {
+        "prefix": "$SlideToggle",
+        "body": [
+            "$(${selector}).slideToggle();"
+        ],
+        "description": "Display or hide the matched elements with a sliding motion."
+    },
+    "$SlideToggleFull": {
+        "prefix": "$SlideToggleFull",
+        "body": [
+            "$(${selector}).slideToggle(${duration}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Display or hide the matched elements with a sliding motion."
+    },
+    "$SlideUp": {
+        "prefix": "$SlideUp",
+        "body": [
+            "$(${selector}).slideUp();"
+        ],
+        "description": "Display the matched elements with a sliding motion."
+    },
+    "$SlideUpFull": {
+        "prefix": "$SlideUpFull",
+        "body": [
+            "$(${selector}).slideUp(${duration}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Display the matched elements with a sliding motion."
+    },
+    "$Submit": {
+        "prefix": "$Submit",
+        "body": [
+            "$(${selector}).submit(function (e) { ",
+            "\te.preventDefault();",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"submit\" JavaScript event, or trigger that event on an element."
+    },
+    "$SubmitTrigger": {
+        "prefix": "$SubmitTrigger",
+        "body": [
+            "$(${selector}).submit();"
+        ],
+        "description": "Bind an event handler to the \"submit\" JavaScript event, or trigger that event on an element."
+    },
+    "$TextGet": {
+        "prefix": "$TextGet",
+        "body": [
+            "$(${selector}).text();"
+        ],
+        "description": "Get the combined text contents of each element in the set of matched elements, including their descendants."
+    },
+    "$TextSet": {
+        "prefix": "$TextSet",
+        "body": [
+            "$(${selector}).text(${textString});"
+        ],
+        "description": "Set the content of each element in the set of matched elements to the specified text."
+    },
+    "$Toggle": {
+        "prefix": "$Toggle",
+        "body": [
+            "$(${selector}).toggle();"
+        ],
+        "description": "Display or hide the matched elements."
+    },
+    "$ToggleFull": {
+        "prefix": "$ToggleFull",
+        "body": [
+            "$(${selector}).toggle(${duration}, function () {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Display or hide the matched elements."
+    },
+    "$ToggleSwitch": {
+        "prefix": "$ToggleSwitch",
+        "body": [
+            "$(${selector}).toggle(${showOrHide});"
+        ],
+        "description": "Display or hide the matched elements."
+    },
+    "$Trigger": {
+        "prefix": "$Trigger",
+        "body": [
+            "$(${selector}).trigger(${eventType});"
+        ],
+        "description": "Execute all handlers and behaviors attached to the matched elements for the given event type."
+    },
+    "$TriggerHandler": {
+        "prefix": "$TriggerHandler",
+        "body": [
+            "$(${selector}).triggerHandler(${eventType});"
+        ],
+        "description": "Execute all handlers attached to an element for an event."
+    },
+    "$TriggerHandlerWithData": {
+        "prefix": "$TriggerHandlerWithData",
+        "body": [
+            "$(${selector}).triggerHandler(${eventType}, { ${name}: ${value} });"
+        ],
+        "description": "Execute all handlers attached to an element for an event."
+    },
+    "$TriggerWithData": {
+        "prefix": "$TriggerWithData",
+        "body": [
+            "$(${selector}).trigger(${eventType}, { ${name}: ${value} });"
+        ],
+        "description": "Execute all handlers and behaviors attached to the matched elements for the given event type."
+    },
+    "$Unbind": {
+        "prefix": "$Unbind",
+        "body": [
+            "$(${selector}).unbind(${eventType});"
+        ],
+        "description": "Remove a previously-attached event handler from the elements."
+    },
+    "$UnbindAll": {
+        "prefix": "$UnbindAll",
+        "body": [
+            "$(${selector}).unbind();"
+        ],
+        "description": "Remove a previously-attached event handler from the elements."
+    },
+    "$Unload": {
+        "prefix": "$Unload",
+        "body": [
+            "$(${selector}).unload(function () { ",
+            "\t$0",
+            "});"
+        ],
+        "description": "Bind an event handler to the \"unload\" JavaScript event."
+    },
+    "$ValGet": {
+        "prefix": "$ValGet",
+        "body": [
+            "$(${selector}).val();"
+        ],
+        "description": "Get the current value of the first element in the set of matched elements."
+    },
+    "$ValSet": {
+        "prefix": "$ValSet",
+        "body": [
+            "$(${selector}).val(${value});"
+        ],
+        "description": "Set the value of each element in the set of matched elements."
+    },
+    "$WidthGet": {
+        "prefix": "$WidthGet",
+        "body": [
+            "$(${selector}).width();"
+        ],
+        "description": "Get the current computed width for the first element in the set of matched elements."
+    },
+    "$WidthSet": {
+        "prefix": "$WidthSet",
+        "body": [
+            "$(${selector}).width(${value});"
+        ],
+        "description": "Set the CSS width of each element in the set of matched elements."
+    },
+    "$Wrap": {
+        "prefix": "$Wrap",
+        "body": [
+            "$(${selector}).wrap(\"\u003c${wrappingElement}\u003e\u003c/${wrappingElement}\u003e\");"
+        ],
+        "description": "Wrap an HTML structure around each element in the set of matched elements."
+    },
+    "$WrapAll": {
+        "prefix": "$WrapAll",
+        "body": [
+            "$(${selector}).wrapAll(\"\u003c${wrappingElement}\u003e\u003c/${wrappingElement}\u003e\");"
+        ],
+        "description": "Wrap an HTML structure around all elements in the set of matched elements."
+    },
+    "$WrapInner": {
+        "prefix": "$WrapInner",
+        "body": [
+            "$(${selector}).wrapInner(\"\u003c${wrappingElement}\u003e\u003c/${wrappingElement}\u003e\");"
+        ],
+        "description": "Wrap an HTML structure around the content of each element in the set of matched elements."
+    }
+}
